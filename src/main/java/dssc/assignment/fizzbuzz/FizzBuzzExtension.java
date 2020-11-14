@@ -1,5 +1,4 @@
 package dssc.assignment.fizzbuzz;
-
 /*
 We want our Java program to print numbers from 1 to 105 and apply these rules.
 
