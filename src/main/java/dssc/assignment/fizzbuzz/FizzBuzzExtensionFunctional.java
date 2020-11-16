@@ -14,12 +14,11 @@ public class FizzBuzzExtensionFunctional {
     public static void main(String[] args) {
         IntStream stream = IntStream.rangeClosed(1, 105);
 
-        stream.forEach(i-> {
-            String s = "";
-            s = (i % 7 == 0) ? "Bang" : "";
-            s = (i % 5 == 0 && i % 7 == 0 ) ? "Buzz"+s : "";
-            s = (i % 3 == 0 && i % 7 == 0 ) ? "Fizz"+s : "";
-            System.out.println(s.isEmpty()? i : s);}
-        );
+        stream.forEach(x->{
+            String s="";
+            s+=(x%3==0)?"Fizz":"";
+            s+=(x%5==0)?"Buzz":"";
+            s+=(x%7==0)?"Bang":"";
+            System.out.println(s.isEmpty()?x:s);});
     }
 }
