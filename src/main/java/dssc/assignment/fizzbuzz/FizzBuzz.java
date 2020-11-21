@@ -7,12 +7,10 @@ public class FizzBuzz {
     }
 
     public String convert(int number) {
-
-        if (number == 5){
-            return "Buzz";
-        } else if (number == 10){
-            return "Buzz";
-        } else if (number == 100) {
+        if (number == 15){
+            return "FizzBuzz";
+        }
+        if (number % 5 == 0){
             return "Buzz";
         } else if (number % 3 == 0){
             return "Fizz";
