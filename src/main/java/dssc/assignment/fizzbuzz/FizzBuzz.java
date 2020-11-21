@@ -7,11 +7,7 @@ public class FizzBuzz {
     }
 
     public String convert(int number) {
-        if (number == 15){
-            return "FizzBuzz";
-        } else if (number == 45){
-            return "FizzBuzz";
-        } else if (number == 75){
+        if (number % 15 == 0){
             return "FizzBuzz";
         } else if (number % 5 == 0){
             return "Buzz";
