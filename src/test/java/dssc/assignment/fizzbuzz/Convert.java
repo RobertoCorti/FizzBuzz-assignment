@@ -34,7 +34,7 @@ public class Convert {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {15, 45})
+    @ValueSource(ints = {15, 45, 75})
     void multiples_of_3_and_5_to_FizzBuzz(int number){
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("FizzBuzz", fizzBuzz.convert(number));
