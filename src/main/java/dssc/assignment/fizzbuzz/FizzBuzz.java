@@ -7,7 +7,9 @@ public class FizzBuzz {
     }
 
     public String convert(int number) {
-        if (number % 3 == 0){
+        if (number == 5){
+            return "Buzz";
+        } else if (number % 3 == 0){
             return "Fizz";
         } else {
             return Integer.toString(number);
